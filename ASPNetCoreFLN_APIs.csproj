@@ -1,0 +1,52 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+	  <TargetFramework>netcoreapp3.1</TargetFramework> 
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Controllers\1hfzjwhq.prh~" />
+    <None Remove="Controllers\tyjwxtby.k4c~" />
+    <None Remove="Repository\SchoolRepository.cs~RF1a6c919d.TMP" />
+    <None Remove="Repository\SpotAssessmentRepository.cs~RFfbc3f91.TMP" />
+    <None Remove="Repository\w4qv05q3.gbv~" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+    <PackageReference Include="Dapper" Version="2.0.123" />
+    <PackageReference Include="Microsoft.AspNetCore.Cors" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="5.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Caching.Memory" Version="6.0.1" />
+    <PackageReference Include="Newtonsoft.Json.Bson" Version="1.0.2" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+	 <!-- <Folder Include="OptionImages\" />
+    <Folder Include="QuestionImages\" />
+    <Folder Include="wwwroot\UploadImages\" />-->
+	  <Folder Include="UploadImages\QuestionImages\**" />
+	  <Folder Include="UploadImages\OptionImages\**" />
+	  <Content Include="UploadImages\QuestionImages\**" />
+	  <Content Include="UploadImages\OptionImages\**" />
+	  <Folder Include="wwwroot\Uploads\TeacherTraining\OptionImages\" />
+	  <Folder Include="wwwroot\Uploads\TeacherTraining\QuestionImages\" />
+	  <!--<Content Include="wwwroot\UploadImages\QuestionImages\**" CopyToPublishDirectory="PreserveNewest" />
+	  <Content Include="wwwroot\UploadImages\OptionImages\**" CopyToPublishDirectory="PreserveNewest" />
+	  <Content Include="QuestionImages_old\**" CopyToPublishDirectory="PreserveNewest" />
+	  <Content Include="OptionImages_old\**" CopyToPublishDirectory="PreserveNewest" />
+	  <Folder Include="QuestionImages_old\" />
+	  <Content Include="QuestionImages_old\**" CopyToPublishDirectory="PreserveNewest" />
+	  <Content Include="OptionImages_old\**" CopyToPublishDirectory="PreserveNewest" />-->
+  </ItemGroup>
+	
+<!--
+  <ItemGroup>
+    <Compile Remove="wwwroot\**" />
+    <Content Remove="wwwroot\**" />
+    <EmbeddedResource Remove="wwwroot\**" />
+    <None Remove="wwwroot\**" />
+  </ItemGroup>-->
+</Project>
